@@ -77,7 +77,7 @@ void display(TreeNode * root){
         return ans;
     }
 int main(){
-    vector<int>v{3,9,20,INT_MAX,INT_MAX,15,7 };
+    vector<int>v{3,9,20,INT_MIN,INT_MIN,15,7 };
     TreeNode* root = construct(v);
     vector<vector<int>>ans = zigzagLevelOrder(root);
     for(auto ele : ans){
